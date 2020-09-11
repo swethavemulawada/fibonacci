@@ -1,0 +1,26 @@
+Number = int(intput("\nPlease Enter the Range Number: "))
+
+First_Value = 0
+Second_Value = 1
+
+
+for Num in range(0, Number):
+           if(Num <= 1):
+                      Next = Num
+           else:
+                      Next = First_Value + Second_Value
+                      First_Value = Second_Value
+                      Second_Value = Next
+           print(Next)
+
+Please Enter the Range Number: 10
+O
+1
+1
+2
+3
+5
+8
+13
+21
+34
